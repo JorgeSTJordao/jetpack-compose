@@ -32,9 +32,6 @@ class MainActivity : ComponentActivity() {
                     composable("screex1"){
                         ScreenEx1(navController)
                     }
-                    composable("screex2"){
-                        ScreenEx2(navController)
-                    }
                 }
             }
         }
