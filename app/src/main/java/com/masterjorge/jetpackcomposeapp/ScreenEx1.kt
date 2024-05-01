@@ -68,7 +68,6 @@ fun ScreenEx1(navController: NavHostController){
 @Composable
 fun SimpleColumn(j: MutableIntState, sentences: List<String>, navController: NavHostController){
 
-
     Text(text = "HomeScreen - Ex1", fontSize = 35.sp)
 
     Button(
