@@ -19,6 +19,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.masterjorge.jetpackcomposeapp.screens.ScreenEx1
+import com.masterjorge.jetpackcomposeapp.screens.ScreenEx2
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -62,11 +63,16 @@ fun BottomNavigationBar(){
         NavHost(
             navController = navController,
             startDestination = Screens.ScreenEx1.route,
-            modifier = Modifier.padding(
+            modifier =
+            Modifier
+                .padding(
                 paddingValues = paddingValues
             )){
             composable(Screens.ScreenEx1.route){
-                ScreenEx1()
+                ScreenEx1(navController)
+            }
+            composable(Screens.ScreenEx2.route){
+                ScreenEx2(navController)
             }
         }
     }
