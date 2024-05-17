@@ -35,6 +35,7 @@ fun ScreenEx1(navController: NavHostController){
         "Linkin Park", "Simple Plan", "Nirvana", "The Beatles", "Rolling Stones", "Guns N'Roses"
     )
     val i = 0
+
     //O mutable state permite que o aplicativo se lembre da variável a partir do momento em que
     //a Activity é atualizada
     val j = remember { mutableIntStateOf(i) }
@@ -67,7 +68,6 @@ fun ScreenEx1(navController: NavHostController){
 //Cria uma coluna e seus elementos
 @Composable
 fun SimpleColumn(j: MutableIntState, sentences: List<String>, navController: NavHostController){
-
 
     Text(text = "HomeScreen - Ex1", fontSize = 35.sp)
 
